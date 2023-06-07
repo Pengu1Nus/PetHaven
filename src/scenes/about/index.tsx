@@ -8,7 +8,7 @@ import {
 import { motion } from "framer-motion";
 import AboutCard from "./AboutCard";
 import ActionButton from "@/shared/ActionButton";
-import aboutPage from "@/assets/aboutpage.png";
+import aboutPageImg from "@/assets/aboutPage.png";
 
 const about: Array<AboutType> = [
   {
@@ -90,7 +90,7 @@ const About = ({ setSelectedPage }: Props) => {
           <img
             className="mx-auto w-[40%]"
             alt="about-page-photo"
-            src={aboutPage}
+            src={aboutPageImg}
           />
           {/* DESCRIPTION */}
           <div>
