@@ -1,8 +1,8 @@
 export enum SelectedPage {
-  Home = "home",
-  About = "about",
-  OurPets = "our pets",
-  ContactUs = "contact us",
+  Home = "главная",
+  About = "онас",
+  OurPets = "нашипитомцы",
+  ContactUs = "свяжитесьснами",
 }
 
 export interface AboutType {

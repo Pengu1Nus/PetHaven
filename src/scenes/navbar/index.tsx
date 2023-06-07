@@ -30,30 +30,30 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               <div className={`${flexBetween} w-full`}>
                 <div className={`${flexBetween} gap-8 text-sm`}>
                   <Link
-                    page="Home"
+                    page="Главная"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
                   <Link
-                    page="About"
+                    page="О Нас"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
                   <Link
-                    page="Our Pets"
+                    page="Наши Питомцы"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
                   <Link
-                    page="Contact Us"
+                    page="Свяжитесь с Нами"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
                 </div>
                 <div className={`${flexBetween} gap-8`}>
-                  <p>Sign In</p>
+                  {/* <p>Sign In</p> */}
                   <ActionButton setSelectedPage={setSelectedPage}>
-                    Become a Member
+                    Оставьте заявку
                   </ActionButton>
                 </div>
               </div>
@@ -81,23 +81,23 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
           {/* MENU ITEMS */}
           <div className="ml-[33%] flex flex-col gap-10 text-2xl">
             <Link
-              page="Home"
+              page="Главная"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="About"
+              page="О Нас"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Our Pets"
+              page="Наши Питомцы"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
 
             <Link
-              page="Contact Us"
+              page="Свяжитесь с Нами"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
