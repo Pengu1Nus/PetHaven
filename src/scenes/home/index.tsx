@@ -13,7 +13,7 @@ type Props = {
 const Home = ({ setSelectedPage }: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   return (
-    <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
+    <section id="главная" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
       {/* IMAGE AND MAIN HEADER */}
       <motion.div
         className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
@@ -39,10 +39,9 @@ const Home = ({ setSelectedPage }: Props) => {
               </div>
             </div>
             <p className="mt-8 text-sm">
-              Испытайте тепло и счастье, которые домашние животные привносят в
-              вашу жизнь. Присоединяйтесь к миссии ПетСити, где спасают жизни,
-              радостно виляют хвостами и лелеют бездомных питомцев, пока они не
-              найдут себе идеальных компаньонов.
+              Мы предлагаем дать шанс маленькому и милому питомцу с чрезвычайно
+              широкой и открытой душой. Он или она будут любить вас больше, чем
+              кто-либо другой в мире, вот увидите!
             </p>
           </motion.div>
           {/* ACTIONS */}
@@ -81,7 +80,7 @@ const Home = ({ setSelectedPage }: Props) => {
 
       {/* DONATORS */}
       {isAboveMediumScreens && (
-        <div className="h-[100px] w-full bg-primary-100 py-10">
+        <div className="h-[150px] w-full bg-primary-100 py-10">
           <div className="mx-auto w-5/6">
             <div></div>
           </div>

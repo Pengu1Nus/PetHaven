@@ -43,7 +43,7 @@ type Props = {
 
 const About = ({ setSelectedPage }: Props) => {
   return (
-    <section id="about" className="mx-auto min-h-full w-5/6 py-20">
+    <section id="онас" className="mx-auto min-h-full w-5/6 py-20">
       <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.About)}>
         {/* HEADER */}
         <motion.div
@@ -57,13 +57,18 @@ const About = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <HText>БОЛЬШЕ, ЧЕМ ПРОСТО ПРИЮТ</HText>
+          <HText>
+            БОЛЬШЕ, ЧЕМ ПРОСТО <span className="text-primary-500">ПРИЮТ</span>
+          </HText>
           <p className="my-5 text-sm">
             Пет Сити — это специализированный приют для домашних животных,
             обеспечивающий любящую и заботливую среду, где животные получают
-            исключительную заботу и находят свой дом навсегда, принося радость и
-            дружеские отношения бесчисленным семьям.
+            исключительную заботу.
           </p>
+          <p className="my-5 text-sm">Откройте для себя невероятную дружбу —
+            приходите в Пет Сити и найдите своего идеального четвероногого
+            друга, готового наполнить ваши дни любовью, смехом и бесконечным
+            вилянием хвостом.</p>
         </motion.div>
 
         {/* ABOUT */}
