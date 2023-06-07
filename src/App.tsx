@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { SelectedPage } from "@/shared/types";
 import Home from "@/scenes/home";
 import About from "@/scenes/about";
+import OurPets from "@/scenes/ourPets";
+
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
     SelectedPage.Home
@@ -30,7 +32,8 @@ function App() {
         setSelectedPage={setSelectedPage}
       />
       <Home setSelectedPage={setSelectedPage} />
-      <About />
+      <About setSelectedPage={setSelectedPage} />
+      <OurPets setSelectedPage={setSelectedPage} />
     </div>
   );
 }
