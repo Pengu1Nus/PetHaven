@@ -65,10 +65,11 @@ const About = ({ setSelectedPage }: Props) => {
             обеспечивающий любящую и заботливую среду, где животные получают
             исключительную заботу.
           </p>
-          <p className="my-5 text-sm">Откройте для себя невероятную дружбу —
-            приходите в Пет Сити и найдите своего идеального четвероногого
-            друга, готового наполнить ваши дни любовью, смехом и бесконечным
-            вилянием хвостом.</p>
+          <p className="my-5 text-sm">
+            Откройте для себя невероятную дружбу — приходите в Пет Сити и
+            найдите своего идеального четвероногого друга, готового наполнить
+            ваши дни любовью, смехом и бесконечным вилянием хвостом.
+          </p>
         </motion.div>
 
         {/* ABOUT */}
@@ -76,7 +77,7 @@ const About = ({ setSelectedPage }: Props) => {
           className="mt-5 items-center justify-between gap-8 md:flex"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.1 }}
           variants={container}
         >
           {about.map((aboutItem: AboutType) => (
@@ -105,7 +106,7 @@ const About = ({ setSelectedPage }: Props) => {
                 <motion.div
                   initial="hidden"
                   whileInView="visible"
-                  viewport={{ once: true, amount: 0.5 }}
+                  viewport={{ once: true, amount: 0.2 }}
                   transition={{ duration: 0.5 }}
                   variants={{
                     hidden: { opacity: 0, x: 50 },
@@ -126,7 +127,7 @@ const About = ({ setSelectedPage }: Props) => {
               viewport={{ once: true, amount: 0.5 }}
               transition={{ delay: 0.2, duration: 0.5 }}
               variants={{
-                hidden: { opacity: 0, x: -50 },
+                hidden: { opacity: 0, x: 50 },
                 visible: { opacity: 1, x: 0 },
               }}
             >
