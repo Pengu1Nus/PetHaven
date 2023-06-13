@@ -6,6 +6,7 @@ import About from "@/scenes/about";
 import OurPets from "@/scenes/ourPets";
 import ContactUs from "@/scenes/contactUs";
 import Footer from "@/scenes/footer";
+
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
     SelectedPage.Home
